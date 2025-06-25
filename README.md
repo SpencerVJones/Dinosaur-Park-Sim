@@ -1,4 +1,9 @@
 # Dinosaur-Park-Sim
+ <div align="left">
+	
+  ![Repo Views](https://visitor-badge.laobi.icu/badge?page_id=SpencerVJones/Dinosaur-Park-Sim)
+</div>
+
 Simulates the management of a dinosaur park, allowing users to interact with various aspects such as park operations, dinosaur data, visitor management, and more.
 
 ## Features:
