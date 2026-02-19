@@ -6,7 +6,7 @@
 </div>
 
   <p align="center">
-    A Java RPG-style dinosaur management game with a modern Vaadin UI, progression systems, and a Render-ready Docker deployment.
+    A Java RPG-style dinosaur management game with a modern Vaadin UI, progression systems, and a Render Docker deployment.
     <br />
     <br />
     <a href="https://github.com/SpencerVJones/Dinosaur-Park-Sim/issues">Report Bug</a>
