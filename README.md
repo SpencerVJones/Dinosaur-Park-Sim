@@ -1,5 +1,5 @@
 <div align="center">
-  <h2 align="center">Ancient Eden | Dinosaur Park Command Center</h2>
+  <h2 align="center"> Dinosaur Park Simulator </h2>
   <div align="left">
 
 ![Repo Views](https://visitor-badge.laobi.icu/badge?page_id=SpencerVJones/Dinosaur-Park-Sim)
