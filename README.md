@@ -88,6 +88,10 @@ Gameplay loops include:
 ## Demo
 **Live:** [https://ancient-eden-command-center.onrender.com/](https://ancient-eden-command-center.onrender.com/)
 
+
+https://github.com/user-attachments/assets/bd602913-d5c3-4e37-a97a-2c4c786cd5c1
+
+
 ## Project Structure
 ```bash
 Dinosaur-Park-Sim/
