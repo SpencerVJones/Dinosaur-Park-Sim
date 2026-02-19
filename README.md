@@ -31,7 +31,7 @@
 ![Vaadin](https://img.shields.io/badge/Vaadin-24.5.5-00B4F0.svg?style=for-the-badge)
 ![Maven](https://img.shields.io/badge/Maven-Build-C71A36.svg?style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-Deploy-2496ED.svg?style=for-the-badge)
-![Render](https://img.shields.io/badge/Render-Free%20Deploy-4A90E2.svg?style=for-the-badge)
+![Render](https://img.shields.io/badge/Render-Deploy-4A90E2.svg?style=for-the-badge)
 </div>
 
 ## Table of Contents
