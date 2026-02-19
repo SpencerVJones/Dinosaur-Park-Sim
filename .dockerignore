@@ -1,0 +1,13 @@
+.git
+.github
+.idea
+.vscode
+.m2
+build
+target
+node_modules
+docs
+out
+*.iml
+*.log
+.DS_Store

@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  --accent: #4f78d8;
+  --accent-soft: #7999e3;
+  --surface-0: #0f1424;
+  --surface-1: #151c2f;
+  --surface-2: #1d2740;
+  --line: #2f3a59;
+  --text-main: #e7edf9;
+  --text-muted: #9eabc8;
+  --ok: #4fb17a;
+  --warn: #d6a35d;
+  --risk: #d56a74;
+}
+
+html,
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 10%, #202d4a 0%, #101528 42%, #090d19 100%);
+  color: var(--text-main);
+  font-family: "Manrope", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.01em;
+  color: var(--text-main);
+}
+
+vaadin-app-layout.app-shell::part(drawer) {
+  background: linear-gradient(180deg, rgba(16, 22, 38, 0.98), rgba(10, 14, 24, 0.98));
+  border-right: 1px solid var(--line);
+}
+
+vaadin-app-layout.app-shell::part(navbar) {
+  background: rgba(8, 12, 23, 0.88);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+}
+
+.top-bar {
+  padding: var(--space-2) var(--space-4);
+  gap: var(--space-2);
+}
+
+.top-title {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #f7fbff;
+  text-shadow: 0 1px 10px rgba(33, 54, 103, 0.45);
+}
+
+.top-subtitle {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.top-clock {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.top-hud {
+  display: flex;
+  gap: var(--space-1);
+  align-items: center;
+  margin-right: var(--space-2);
+}
+
+.top-hud-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(88, 113, 172, 0.45);
+  background: rgba(27, 38, 66, 0.74);
+  min-width: 110px;
+}
+
+.top-hud-key {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.top-hud-value {
+  color: #f0f6ff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.side-nav {
+  padding: var(--space-4) var(--space-2);
+  gap: var(--space-2);
+}
+
+a.side-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  padding: var(--space-2);
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+a.side-link:hover {
+  border-color: var(--line);
+  background: rgba(68, 93, 156, 0.17);
+}
+
+a.side-link[highlight],
+a.side-link.router-link-active {
+  background: linear-gradient(180deg, rgba(80, 114, 196, 0.5), rgba(52, 72, 122, 0.48));
+  border-color: rgba(140, 164, 224, 0.44);
+}
+
+.page {
+  padding: var(--space-4);
+  gap: var(--space-4);
+  box-sizing: border-box;
+}
+
+.hero {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: var(--space-4);
+  background: linear-gradient(130deg, rgba(41, 62, 109, 0.36), rgba(17, 24, 40, 0.82) 55%);
+}
+
+.hero-title {
+  margin: 0;
+  font-size: clamp(2.3rem, 4vw, 3.6rem);
+  font-weight: 700;
+  color: #f7fbff;
+  text-shadow: 0 2px 18px rgba(11, 16, 31, 0.6);
+}
+
+.hero-subtitle {
+  margin: var(--space-2) 0 0 0;
+  max-width: 68ch;
+  color: var(--text-muted);
+}
+
+.stats-row {
+  gap: var(--space-2);
+}
+
+.metric-card {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: var(--space-2) var(--space-3);
+  background: linear-gradient(175deg, rgba(28, 37, 61, 0.95), rgba(18, 24, 40, 0.94));
+  box-shadow: 0 8px 24px rgba(4, 6, 12, 0.24);
+}
+
+.metric-label {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.metric-value {
+  margin: var(--space-1) 0;
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.metric-caption {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.93rem;
+}
+
+.tone-blue .metric-value {
+  color: #83b5ff;
+}
+
+.tone-teal .metric-value {
+  color: #88dfc4;
+}
+
+.tone-amber .metric-value {
+  color: #f0c986;
+}
+
+.tone-rose .metric-value {
+  color: #f4a7a9;
+}
+
+.panel-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: var(--space-3);
+  background: rgba(17, 25, 43, 0.85);
+  box-shadow: 0 10px 26px rgba(5, 9, 16, 0.22);
+}
+
+.mission-row,
+.workspace,
+.quest-row {
+  gap: var(--space-3);
+}
+
+.briefing-card pre.briefing-text {
+  margin: 0;
+  white-space: pre-wrap;
+  max-width: 68ch;
+  color: var(--text-main);
+  font-family: "Manrope", sans-serif;
+  line-height: 1.65;
+}
+
+.actions-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.quest-key-panel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  justify-content: space-between;
+}
+
+.quest-key-title {
+  margin: 0;
+}
+
+.quest-key-value {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
+  background: rgba(25, 36, 60, 0.74);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: var(--space-1) var(--space-2);
+}
+
+.filter-row {
+  gap: var(--space-2);
+}
+
+.grid-panel,
+.detail-panel,
+.lab-panel,
+.quest-panel,
+.war-controls,
+.war-feed {
+  width: 100%;
+}
+
+.detail-hero h3 {
+  margin: 0;
+}
+
+.detail-hero p {
+  margin-top: var(--space-1);
+  color: var(--text-muted);
+}
+
+.detail-actions {
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+  gap: var(--space-2);
+}
+
+.tool-row {
+  gap: var(--space-2);
+}
+
+.section-header {
+  color: var(--text-muted);
+  font-size: 1.03rem;
+}
+
+.campaign-status {
+  margin: 0 0 var(--space-2) 0;
+  font-weight: 700;
+  color: var(--accent-soft);
+}
+
+.muted-text {
+  color: var(--text-muted);
+  max-width: 66ch;
+}
+
+.quiz-prompt {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+vaadin-grid.data-grid {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  --vaadin-grid-cell-text-color: #e9f1ff;
+  --vaadin-grid-background-color: rgba(10, 16, 30, 0.94);
+  --vaadin-grid-cell-background: rgba(12, 19, 36, 0.96);
+  --vaadin-grid-header-background-color: rgba(20, 31, 55, 0.94);
+  --vaadin-grid-header-cell-text-color: #f3f8ff;
+  --vaadin-grid-body-row-hover-cell-background: rgba(41, 59, 98, 0.52);
+  --vaadin-grid-body-row-selected-cell-background: rgba(66, 93, 154, 0.44);
+  --vaadin-grid-border-color: rgba(98, 126, 186, 0.72);
+}
+
+vaadin-grid.data-grid::part(header-cell) {
+  font-weight: 700;
+  color: #f3f8ff;
+  border-bottom: 1px solid rgba(121, 150, 212, 0.66);
+}
+
+vaadin-grid.data-grid::part(body-cell) {
+  background: rgba(12, 19, 36, 0.96);
+  color: #e9f1ff;
+  border-bottom: 1px solid rgba(76, 100, 151, 0.52);
+}
+
+vaadin-notification-card::part(overlay) {
+  background: rgba(11, 17, 31, 0.97);
+  color: #f1f6ff;
+  border: 1px solid rgba(95, 124, 189, 0.7);
+  box-shadow: 0 12px 26px rgba(3, 6, 12, 0.5);
+}
+
+vaadin-text-area,
+vaadin-text-field,
+vaadin-select,
+vaadin-integer-field,
+vaadin-number-field,
+vaadin-radio-group {
+  --vaadin-input-field-label-color: #d7e4ff;
+  --vaadin-input-field-value-color: var(--text-main);
+  --vaadin-input-field-placeholder-color: #8ea4cf;
+  --vaadin-input-field-helper-color: var(--text-muted);
+}
+
+vaadin-text-area.details-text {
+  width: 100%;
+  --vaadin-field-default-width: 100%;
+}
+
+vaadin-text-area::part(label),
+vaadin-text-field::part(label),
+vaadin-select::part(label),
+vaadin-integer-field::part(label),
+vaadin-number-field::part(label),
+vaadin-radio-group::part(label) {
+  color: #d7e4ff;
+  font-weight: 600;
+}
+
+vaadin-text-area.details-text::part(input-field),
+vaadin-text-field::part(input-field),
+vaadin-select::part(input-field),
+vaadin-integer-field::part(input-field),
+vaadin-number-field::part(input-field),
+vaadin-radio-group::part(group-field) {
+  background: rgba(18, 27, 47, 0.85);
+  border: 1px solid var(--line);
+  color: var(--text-main);
+}
+
+vaadin-text-area.details-text::part(input-field) {
+  min-height: 140px;
+}
+
+vaadin-text-area.details-text::part(value),
+vaadin-text-field::part(value),
+vaadin-integer-field::part(value),
+vaadin-number-field::part(value),
+vaadin-select-value-button,
+vaadin-radio-button::part(label) {
+  color: var(--text-main);
+}
+
+vaadin-text-area[readonly]::part(value),
+vaadin-text-field[readonly]::part(value),
+vaadin-integer-field[readonly]::part(value),
+vaadin-number-field[readonly]::part(value) {
+  color: var(--text-main);
+  -webkit-text-fill-color: var(--text-main);
+  opacity: 1;
+}
+
+vaadin-tabs.lab-tabs {
+  border-bottom: 1px solid var(--line);
+}
+
+vaadin-tab {
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+vaadin-tab:hover {
+  color: var(--text-main);
+}
+
+vaadin-tab[selected] {
+  color: var(--text-main);
+  background: rgba(43, 61, 98, 0.62);
+  border-color: var(--line);
+}
+
+vaadin-button.btn-primary,
+vaadin-button.btn-ghost {
+  border-radius: 10px;
+  min-height: 42px;
+  font-weight: 700;
+}
+
+vaadin-button.btn-primary {
+  background: linear-gradient(180deg, #587dd6, #3e5fae);
+  color: #f5f8ff;
+  border: 1px solid #8aa4e8;
+}
+
+vaadin-button.btn-ghost {
+  background: rgba(35, 49, 82, 0.65);
+  color: var(--text-main);
+  border: 1px solid #425074;
+}
+
+@media (max-width: 1100px) {
+  .stats-row,
+  .mission-row,
+  .workspace,
+  .quest-row {
+    flex-wrap: wrap;
+  }
+
+  .top-clock {
+    display: none;
+  }
+
+  .top-hud {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+# Build outputs
+build/
+out/
+target/
+dist/
+.m2/
+*.class
+node_modules/
+src/main/frontend/generated/
+
+# Vaadin generated frontend files
+package-lock.json
+vite.generated.ts
+types.d.ts
+tsconfig.json
+vite.config.ts
+package.json
+
+# IDE/editor metadata
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store

@@ -1,55 +1,250 @@
-# Dinosaur-Park-Sim
- <div align="left">
-	
-  ![Repo Views](https://visitor-badge.laobi.icu/badge?page_id=SpencerVJones/Dinosaur-Park-Sim)
+<div align="center">
+  <h2 align="center">Ancient Eden | Dinosaur Park Command Center</h2>
+  <div align="left">
+
+![Repo Views](https://visitor-badge.laobi.icu/badge?page_id=makesspence/Dinosaur-Park-Sim)
 </div>
 
-Simulates the management of a dinosaur park, allowing users to interact with various aspects such as park operations, dinosaur data, visitor management, and more.
+  <p align="center">
+    A Java RPG-style dinosaur management game with a modern Vaadin UI, progression systems, and a Render-ready Docker deployment.
+    <br />
+    <br />
+    <a href="https://github.com/makesspence/Dinosaur-Park-Sim/issues">Report Bug</a>
+    |
+    <a href="https://github.com/makesspence/Dinosaur-Park-Sim/issues">Request Feature</a>
+  </p>
+</div>
 
-## Features:
-- **Park Management:** Control park opening, track visitor counts, and monitor park safety ratings.
-- **Dinosaur Data:** Access a comprehensive database of dinosaur species and their characteristics.
-- **Visitor Interaction:** Engage visitors with park attractions, educational content, and interactive experiences.
-- **Staff Management:** Provide staff members with tools to manage exhibits, handle emergencies, and ensure visitor satisfaction.
+<!-- PROJECT SHIELDS -->
+<div align="center">
 
-## Components:
-1. `ParkManager.java`
-- **Function:** Manages park operations and user interactions.
-- **Features:** Countdown to park opening, real-time date and time display, visitor count monitoring, and user prompts for visitor/staff interaction.
-2. `DinosaurPark.java`
-- **Function:** Represents the main interface for the dinosaur park.
-- **Features:** Initializes the list of dinosaurs and provides methods for accessing dinosaur data.
-3. `DinosaursData.java`
-- **Function:** Populates the dinosaur database with predefined data.
-- **Features:** Hardcoded information about various dinosaur species, including name, species, age, diet, size, weight, and aggression level.
-4. `Dinosaur.java`
-- **Function:** Represents individual dinosaur entities.
-- **Features:** Attributes such as name, species, age, diet, size, weight, and aggression level.
-5. `Visitor.java`
-- **Function:** Manages visitor interactions within the park.
-- **Features:** Options for exploring exhibits, learning about dinosaurs, and enjoying park attractions.
-6. `Staff.java`
-- **Function:** Provides additional functionalities for staff members.
-- **Features:** Tools for managing exhibits, handling emergencies, and ensuring visitor safety.
+![License](https://img.shields.io/github/license/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
+![Contributors](https://img.shields.io/github/contributors/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
+![Stargazers](https://img.shields.io/github/stars/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
+![Platform](https://img.shields.io/badge/platform-Web%20Game-1f2937.svg?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-17-blue.svg?style=for-the-badge)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.5-6DB33F.svg?style=for-the-badge)
+![Vaadin](https://img.shields.io/badge/Vaadin-24.5.5-00B4F0.svg?style=for-the-badge)
+![Maven](https://img.shields.io/badge/Maven-Build-C71A36.svg?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-Deploy-2496ED.svg?style=for-the-badge)
+![Render](https://img.shields.io/badge/Render-Free%20Deploy-4A90E2.svg?style=for-the-badge)
+</div>
 
-## Usage:
-To run the DinoPark Management System:
+## Table of Contents
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Demo](#demo)
+- [Project Structure](#project-structure)
+- [Game Routes](#game-routes)
+- [Deploy to Render (Docker)](#deploy-to-render-docker)
+- [Testing](#testing)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Run Locally](#run-locally)
+  - [Build](#build)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-- Clone the repository to your local machine.
-- Compile the Java files using a Java compiler such as javac.
-- Run the main program.
-- Follow the on-screen instructions to interact with the system.
+## Overview
+**Ancient Eden** is a Java-first dinosaur management game that blends:
+- A polished Vaadin command center UI
+- RPG-like progression (XP, levels, rank, missions, achievements)
+- Strategy systems for exploration, stewardship, and budget-constrained operations
 
-## Technologies Used:
-- **Java:** The core programming language used for implementing the project's functionalities.
-- **Java Time API:** Utilized for managing date and time functionalities within the application.
-- **IDE:** IntelliJ IDEA Ultimate
+Gameplay loops include:
+- Discovering species and filling a Safari Log
+- Completing encounters and quizzes
+- Running lab simulations (feeding, habitat, revenue, compatibility)
+- Managing War Room actions with real affordability checks
 
+## Technologies Used
+- Java 17
+- Spring Boot 3.3.5
+- Vaadin 24.5.5
+- Maven
+- Docker
+- Render Blueprint (`render.yaml`)
+- Custom Java test runner + unit tests
 
-## Contributing:
-Contributions are welcome! 
+## Features
+- **Explorer mode** with searchable dinosaur data grid and species profiles
+- **Safari Log** persistence per session with codex progression rewards
+- **Quick Quests**: random encounters, quiz arena, mission tracking
+- **Steward Lab tools**: feeding planner, habitat planner, revenue simulator, compatibility checker
+- **War Room simulation** with dynamic operation costs and blocked actions when budget is insufficient
+- **Commander progression system**: XP, levels, rank titles, mission milestones, achievements, tokens
+- **Custom dark RPG theme** (Vaadin theme: `ancient-eden`)
+- **Render-ready Docker deployment** with health checks
 
-### You can contribute by:
--  Reporting bugs
--  Suggesting new features
--  Submitting pull requests to improve the codebase
+## Demo
+Deploy your own live instance using the Render section below, then share:
+
+`https://<your-service-name>.onrender.com`
+
+Health check:
+
+`https://<your-service-name>.onrender.com/health`
+
+## Project Structure
+```bash
+Dinosaur-Park-Sim/
+|-- README.md
+|-- LICENSE
+|-- pom.xml
+|-- Dockerfile
+|-- .dockerignore
+|-- render.yaml
+|-- scripts/
+|   |-- build.sh
+|   |-- run.sh
+|   `-- test.sh
+`-- src/
+    |-- main/
+    |   |-- java/dinosaur/park/
+    |   |   |-- CampaignEngine.java
+    |   |   |-- DinosaurCatalog.java
+    |   |   |-- ParkOperations.java
+    |   |   |-- RangerProgression.java
+    |   |   `-- ...
+    |   |-- java/dinosaur/park/web/
+    |   |   |-- AncientEdenApplication.java
+    |   |   |-- AncientEdenAppShell.java
+    |   |   |-- HealthController.java
+    |   |   |-- ui/
+    |   |   `-- view/
+    |   |-- frontend/themes/ancient-eden/
+    |   |   |-- theme.json
+    |   |   `-- styles.css
+    |   `-- resources/
+    |       |-- application.properties
+    |       `-- dinosaur/park/data/
+    |           |-- dino_catalog_names.txt
+    |           `-- real_dinosaurs.psv
+    `-- test/java/dinosaur/park/
+```
+
+## Game Routes
+- `GET /` - Dashboard
+- `GET /explorer` - Explorer data grid + profile + safari log actions
+- `GET /steward-lab` - Planners and simulators
+- `GET /quests` - Encounters + quiz + mission board
+- `GET /war-room` - Budget strategy operations
+- `GET /health` - deployment health endpoint
+
+## Deploy to Render (Docker)
+This project now includes both:
+- `Dockerfile`
+- `render.yaml` (Render Blueprint)
+
+### Option A: Blueprint Deploy (Recommended)
+1. Push this repository to GitHub.
+2. In Render, click `New +` -> `Blueprint`.
+3. Select this repo.
+4. Render reads `render.yaml`, builds with Docker, and starts the web service.
+5. Open:
+```text
+https://<your-service-name>.onrender.com
+https://<your-service-name>.onrender.com/health
+```
+
+### Option B: Manual Docker Web Service
+1. In Render, create a new `Web Service`.
+2. Connect your repo.
+3. Select `Environment: Docker`.
+4. Render will build from `Dockerfile`.
+
+### Local Docker run (optional)
+```bash
+docker build -t ancient-eden .
+docker run --rm -p 8080:10000 -e PORT=10000 ancient-eden
+```
+Then open:
+
+`http://localhost:8080`
+
+## Testing
+Run the project test suite:
+```bash
+./scripts/test.sh
+```
+
+Or with Maven:
+```bash
+mvn test
+```
+
+## Getting Started
+### Prerequisites
+- JDK 17+
+- Maven 3.9+
+- Optional: Docker Desktop
+
+### Installation
+1. Clone:
+```bash
+git clone https://github.com/makesspence/Dinosaur-Park-Sim.git
+```
+2. Enter project:
+```bash
+cd Dinosaur-Park-Sim
+```
+3. Make scripts executable:
+```bash
+chmod +x scripts/build.sh scripts/run.sh scripts/test.sh
+```
+
+### Run Locally
+```bash
+./scripts/run.sh
+```
+Open:
+
+`http://localhost:8080`
+
+If port `8080` is busy:
+```bash
+APP_PORT=8081 ./scripts/run.sh
+```
+
+### Build
+```bash
+./scripts/build.sh
+```
+
+## Usage
+Use Ancient Eden for:
+- Portfolio demonstrations of Java + modern UI delivery
+- Gameplay/system design examples (economy + progression + mission loops)
+- Data-driven UI work using local curated datasets
+- Cloud deployment demonstrations with Docker + Render
+
+## Roadmap
+- [ ] Add persistent save/load profiles (database or file-backed sessions)
+- [ ] Add audio pack management and richer encounter cinematics
+- [ ] Add multiplayer or async leaderboard progression
+- [ ] Expand analytics and balancing telemetry
+- [ ] Add integration tests for full route/flow coverage
+
+## Contributing
+Contributions are welcome.
+- Fork the project
+- Create a feature branch (`git checkout -b feature/your-feature`)
+- Commit your changes (`git commit -m "Add your feature"`)
+- Push the branch (`git push origin feature/your-feature`)
+- Open a pull request
+
+## License
+Distributed under the MIT License. See `LICENSE` for details.
+
+## Contact
+Project Maintainer  
+GitHub: [@makesspence](https://github.com/makesspence)

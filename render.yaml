@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ancient-eden-command-center
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
