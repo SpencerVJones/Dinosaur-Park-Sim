@@ -55,7 +55,7 @@
 - [Contact](#contact)
 
 ## Overview
-**Ancient Eden** is a Java-first dinosaur management game that blends:
+**Dinosaur Park Simulator** is a Java-first dinosaur management game that blends:
 - A polished Vaadin command center UI
 - RPG-like progression (XP, levels, rank, missions, achievements)
 - Strategy systems for exploration, stewardship, and budget-constrained operations
@@ -134,36 +134,6 @@ Dinosaur-Park-Sim/
 - `GET /war-room` - Budget strategy operations
 - `GET /health` - deployment health endpoint
 
-## Deploy to Render (Docker)
-This project now includes both:
-- `Dockerfile`
-- `render.yaml` (Render Blueprint)
-
-### Option A: Blueprint Deploy (Recommended)
-1. Push this repository to GitHub.
-2. In Render, click `New +` -> `Blueprint`.
-3. Select this repo.
-4. Render reads `render.yaml`, builds with Docker, and starts the web service.
-5. Open:
-```text
-https://<your-service-name>.onrender.com
-https://<your-service-name>.onrender.com/health
-```
-
-### Option B: Manual Docker Web Service
-1. In Render, create a new `Web Service`.
-2. Connect your repo.
-3. Select `Environment: Docker`.
-4. Render will build from `Dockerfile`.
-
-### Local Docker run (optional)
-```bash
-docker build -t ancient-eden .
-docker run --rm -p 8080:10000 -e PORT=10000 ancient-eden
-```
-Then open:
-
-`http://localhost:8080`
 
 ## Testing
 Run the project test suite:
@@ -215,11 +185,7 @@ APP_PORT=8081 ./scripts/run.sh
 ```
 
 ## Usage
-Use Ancient Eden for:
-- Portfolio demonstrations of Java + modern UI delivery
-- Gameplay/system design examples (economy + progression + mission loops)
-- Data-driven UI work using local curated datasets
-- Cloud deployment demonstrations with Docker + Render
+- 
 
 ## Roadmap
 - [ ] Add persistent save/load profiles (database or file-backed sessions)
