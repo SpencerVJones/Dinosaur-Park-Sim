@@ -86,13 +86,7 @@ Gameplay loops include:
 - **Render-ready Docker deployment** with health checks
 
 ## Demo
-Deploy your own live instance using the Render section below, then share:
-
-`https://<your-service-name>.onrender.com`
-
-Health check:
-
-`https://<your-service-name>.onrender.com/health`
+**Live:** [https://ancient-eden-command-center.onrender.com/](https://ancient-eden-command-center.onrender.com/)
 
 ## Project Structure
 ```bash
