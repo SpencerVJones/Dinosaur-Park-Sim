@@ -2,29 +2,29 @@
   <h2 align="center">Ancient Eden | Dinosaur Park Command Center</h2>
   <div align="left">
 
-![Repo Views](https://visitor-badge.laobi.icu/badge?page_id=makesspence/Dinosaur-Park-Sim)
+![Repo Views](https://visitor-badge.laobi.icu/badge?page_id=SpencerVJones/Dinosaur-Park-Sim)
 </div>
 
   <p align="center">
     A Java RPG-style dinosaur management game with a modern Vaadin UI, progression systems, and a Render-ready Docker deployment.
     <br />
     <br />
-    <a href="https://github.com/makesspence/Dinosaur-Park-Sim/issues">Report Bug</a>
+    <a href="https://github.com/SpencerVJones/Dinosaur-Park-Sim/issues">Report Bug</a>
     |
-    <a href="https://github.com/makesspence/Dinosaur-Park-Sim/issues">Request Feature</a>
+    <a href="https://github.com/SpencerVJones/Dinosaur-Park-Sim/issues">Request Feature</a>
   </p>
 </div>
 
 <!-- PROJECT SHIELDS -->
 <div align="center">
 
-![License](https://img.shields.io/github/license/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
-![Contributors](https://img.shields.io/github/contributors/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
-![Forks](https://img.shields.io/github/forks/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
-![Stargazers](https://img.shields.io/github/stars/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
-![Repo Size](https://img.shields.io/github/repo-size/makesspence/Dinosaur-Park-Sim?style=for-the-badge)
+![License](https://img.shields.io/github/license/SpencerVJones/Dinosaur-Park-Sim?style=for-the-badge)
+![Contributors](https://img.shields.io/github/contributors/SpencerVJones/Dinosaur-Park-Sim?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/SpencerVJones/Dinosaur-Park-Sim?style=for-the-badge)
+![Stargazers](https://img.shields.io/github/stars/SpencerVJones/Dinosaur-Park-Sim?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/SpencerVJones/Dinosaur-Park-Sim?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/SpencerVJones/Dinosaur-Park-Sim?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/SpencerVJones/Dinosaur-Park-Sim?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/platform-Web%20Game-1f2937.svg?style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-17-blue.svg?style=for-the-badge)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.5-6DB33F.svg?style=for-the-badge)
@@ -240,5 +240,4 @@ Contributions are welcome.
 Distributed under the MIT License. See `LICENSE` for details.
 
 ## Contact
-Project Maintainer  
-GitHub: [@makesspence](https://github.com/makesspence)
+GitHub: [@makesspence](https://github.com/SpencerVJones)
