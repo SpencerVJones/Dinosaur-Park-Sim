@@ -41,7 +41,6 @@
 - [Demo](#demo)
 - [Project Structure](#project-structure)
 - [Game Routes](#game-routes)
-- [Deploy to Render (Docker)](#deploy-to-render-docker)
 - [Testing](#testing)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -189,7 +188,16 @@ APP_PORT=8081 ./scripts/run.sh
 ```
 
 ## Usage
-- 
+Start the application locally and open the printed localhost URL (default: http://localhost:8080).
+
+Use the navigation menu to access:
+- Dashboard (park overview and status)
+- Explorer (browse dinosaurs and log discoveries)
+- Quests (complete encounters and quizzes)
+- Steward Lab (run planners and simulations)
+- War Room (make strategic budget decisions)
+
+Progress through the game by exploring species, completing quests, earning XP, and upgrading your park strategically. 
 
 ## Roadmap
 - [ ] Add persistent save/load profiles (database or file-backed sessions)
@@ -199,15 +207,25 @@ APP_PORT=8081 ./scripts/run.sh
 - [ ] Add integration tests for full route/flow coverage
 
 ## Contributing
-Contributions are welcome.
-- Fork the project
-- Create a feature branch (`git checkout -b feature/your-feature`)
-- Commit your changes (`git commit -m "Add your feature"`)
-- Push the branch (`git push origin feature/your-feature`)
-- Open a pull request
+Contributions are welcome! Feel free to submit issues or pull requests with bug fixes, improvements, or new features.
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
+
+### Contributors
+<a href="https://github.com/SpencerVJones/Dinosaur-Park-Sim/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SpencerVJones/Dinosaur-Park-Sim"/>
+</a>
+
 
 ## License
-Distributed under the MIT License. See `LICENSE` for details.
+Distributed under the MIT License. See LICENSE for more information.
+
 
 ## Contact
-GitHub: [@makesspence](https://github.com/SpencerVJones)
+Spencer Jones
+📧 [jonesspencer99@icloud.com](mailto:jonesspencer99@icloud.com)  
+🔗 [GitHub Profile](https://github.com/SpencerVJones)  
+🔗 [Project Repository](https://github.com/SpencerVJones/Dinosaur-Park-Sim)
